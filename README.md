@@ -10,3 +10,4 @@ C. Shah, Q. Du, and Y. Xu, "Enhanced TabNet: Attentive interpretable tabular lea
 
 
 
+![image](https://github.com/chiran7/TabNets/assets/25559452/b71d82eb-7f93-4e66-88dc-ef53d60a5616)
