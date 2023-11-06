@@ -1,8 +1,6 @@
 import scipy.io as sio
 import scipy
-
 from pytorch_tabnet.tab_model import TabNetClassifier
-
 import torch
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import accuracy_score
@@ -10,14 +8,11 @@ from sklearn.model_selection import train_test_split
 import pandas as pd
 import numpy as np
 np.random.seed(0)
-
-
 import os
 #import wget
 from pathlib import Path
 import shutil
 import gzip
-
 from matplotlib import pyplot as plt
 from pytorch_tabnet.pretraining import TabNetPretrainer
 
