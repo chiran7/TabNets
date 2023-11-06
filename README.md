@@ -20,7 +20,7 @@ The code for "Enhanced TabNet: Attentive interpretable tabular learning for hype
 pip install pytorch-tabnet
 
 # Training:
-python train_tabnet_HSI.py
+python train_tabnets_HSI.py
 
 
 # Citation
