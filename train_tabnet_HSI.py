@@ -22,17 +22,11 @@ from matplotlib import pyplot as plt
 from pytorch_tabnet.pretraining import TabNetPretrainer
 
 
-###dataupav=scipy.io.loadmat('/etabnet2dGAN/pytorch_tabnet/data/Upavia/PaviaU.mat')  #200 training each class, salinas
-###labelupav=scipy.io.loadmat('/etabnet2dGAN/pytorch_tabnet/data/Upavia/PaviaU_gt.mat')
 
-# dataupav=scipy.io.loadmat('/pytorch_tabnet/data/Upavia/PaviaU.mat')  #200 training each class, salinas
-# labelupav=scipy.io.loadmat('/pytorch_tabnet/data/Upavia/PaviaU_gt.mat')
 
-dataind=scipy.io.loadmat('/work/cshah/pctc/etabnet2dGAN/pytorch_tabnet/data/Indianpines/Indian_pines_corrected.mat')  #200 training each class, salinas
-labelind=scipy.io.loadmat('/work/cshah/pctc/etabnet2dGAN/pytorch_tabnet/data/Indianpines/Indian_pines_gt.mat')
+dataind=scipy.io.loadmat('../TabNets/pytorch_tabnet/data/Indianpines/Indian_pines_corrected.mat')  #
+labelind=scipy.io.loadmat('../TabNets/pytorch_tabnet/data/Indianpines/Indian_pines_gt.mat')
 
-#datasalilnas=scipy.io.loadmat('/pytorch_tabnet/data/Indianpines/Salinas_corrected.mat')  #200 training each class, salinas
-#labelsalinas=scipy.io.loadmat('/pytorch_tabnet/data/Indianpines/Salinas_gt.mat')
 
 # datapavu=dataupav['paviaU']
 # labelpavu=labelupav['paviaU_gt']
