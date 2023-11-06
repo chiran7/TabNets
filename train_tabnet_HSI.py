@@ -22,11 +22,8 @@ from matplotlib import pyplot as plt
 from pytorch_tabnet.pretraining import TabNetPretrainer
 
 
-
-
 dataind=scipy.io.loadmat('../TabNets/pytorch_tabnet/data/Indianpines/Indian_pines_corrected.mat')  #
 labelind=scipy.io.loadmat('../TabNets/pytorch_tabnet/data/Indianpines/Indian_pines_gt.mat')
-
 
 # datapavu=dataupav['paviaU']
 # labelpavu=labelupav['paviaU_gt']
@@ -118,11 +115,6 @@ Xtrain.shape, Xtest.shape, ytrain.shape, ytest.shape
 Xtrainn, Xvalid, ytrainn, yvalid = splitTrainTestSet(Xtrain, ytrain, 0.1)
 Xtrainn.shape, Xvalid.shape, ytrainn.shape, yvalid.shape
 
-# Xtrain, Xtest, ytrain, ytest = splitTrainTestSet(X, y, 0.957)
-# Xtrain.shape, Xtest.shape, ytrain.shape, ytest.shape
-# #upavia 1839 train
-# Xtrainn, Xvalid, ytrainn, yvalid = splitTrainTestSet(Xtrain, ytrain, 0.1)
-# Xtrainn.shape, Xvalid.shape, ytrainn.shape, yvalid.shape
 
 clf = TabNetClassifier(
     n_d=256, n_a=256, n_steps=5,
@@ -154,11 +146,6 @@ clf.fit(
 preds = clf.predict(Xtest)
 testacc=accuracy_score(y_pred=preds,y_true=ytest)
 print('accuracy:',testacc)
-
-# from scipy.io import savemat
-# mdic = {"utabnetspredsalin": preds}
-# mdic
-# savemat("predictedutabnetssalinew.mat", mdic)
 
 y_pred = clf.predict(Xtest)
 import sklearn.metrics as metrics
