@@ -17,8 +17,8 @@ from matplotlib import pyplot as plt
 from pytorch_tabnet.pretraining import TabNetPretrainer
 
 
-dataind=scipy.io.loadmat('../TabNets/pytorch_tabnet/data/Indianpines/Indian_pines_corrected.mat')  #
-labelind=scipy.io.loadmat('../TabNets/pytorch_tabnet/data/Indianpines/Indian_pines_gt.mat')
+dataind=scipy.io.loadmat('../TabNets/pytorch_tabnet/data/Indian_pines_corrected.mat')  #
+labelind=scipy.io.loadmat('../TabNets/pytorch_tabnet/data/Indian_pines_gt.mat')
 
 # datapavu=dataupav['paviaU']
 # labelpavu=labelupav['paviaU_gt']
